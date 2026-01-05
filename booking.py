@@ -10,7 +10,7 @@ def book_room():
     guest = get_guest(aadhar)
 
     if not guest:
-        print("❌ Guest not registered")
+        print("Guest not registered")
         return
 
     room_type = input("Enter room type (AC / Non AC): ")
@@ -30,12 +30,12 @@ def book_room():
                 "total": total
             })
 
-            print("✅ Room booked successfully")
+            print("Room booked successfully")
             print(f"Room No: {room['r_no']}")
             print(f"Total Bill: ₹{total}")
             return
 
-    print("❌ No available rooms")
+    print(" No available rooms")
 
 def get_all_booking():
     return bookings
@@ -49,3 +49,4 @@ def view_booking_history():
         print("-" * 30)
         for k, v in b.items():
             print(f"{k}: {v}")
+
