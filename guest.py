@@ -8,7 +8,7 @@ def add_guest(name, aadhar, gender, contact):
         "gender": gender,
         "contact": contact
     })
-    return "✅ Guest registered successfully"
+    return " Guest registered successfully"
 
 def get_guest(aadhar):
     for g in guests:
@@ -26,4 +26,5 @@ def search_guest(name):
             print(g)
             found = True
     if not found:
-        print("❌ Guest not found")
+        print(" Guest not found")
+
