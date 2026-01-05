@@ -46,10 +46,10 @@ def main():
             for r in rooms:
                 if r["r_no"] == r_no:
                     r["available"] = True
-                    print("✅ Checkout successful")
+                    print("Checkout successful")
                     break
             else:
-                print("❌ Room not found")
+                print("Room not found")
 
         elif choice == 6:
             for g in get_all_guest():
@@ -67,7 +67,7 @@ def main():
             view_booking_history()
 
         elif choice == 10:
-            print("Goodbye 👋")
+            print("Goodbye")
             break
 
         else:
@@ -75,4 +75,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
