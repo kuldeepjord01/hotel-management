@@ -26,5 +26,6 @@ def add_room(r_no, r_type, price):
         "price": price,
         "available": True
     })
-    return "✅ Room added successfully"
+    return "Room added successfully"
+
 
